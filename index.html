@@ -1,40 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Registration Form</title>
-        <link href="form.css" rel="stylesheet">
-    </head>
-    <body>
-        <h1>Registration Form</h1>
-        <p>Please fill out this form with the rquired information</p>
-        <form action="" method="post">
-        <fieldset>
-            <label for="first-name">Enter Your First Name: <input type="text" required id="first-name" name="first-name"></label>
-            <label for="last-name">Enter Your Last Name: <input type="text" required id="last-name" name="last-name"></label>
-            <label for="email">Enter Your Email: <input type="email" required id="email" name="email"></label>
-            <label for="password">Create a New Password: <input type="password" required id="password" name="password" pattern="[a-z0-5]{8,}"></label>
-        </fieldset>
-        <fieldset>
-            <label for="personal"><input type="radio" class="inline" id="personal" name="personal-business" required> Personal Account</label>
-            <label for="business"><input type="radio" class="inline" id="business" name="personal-business" required> Business Account</label>
-            <label for="terms"><input type="checkbox" class="inline" id="terms" required name="terms"> I accept the <a target="_blank" href="https://app.termly.io/builder/websites/897f21e0-cf6c-45c8-a87b-7b0cb98ce476/documents/3146524/General/Platform%20Type">terms and conditions</a></label>
-        </fieldset>
-        <fieldset>
-            <label for="profile">Upload a profile picture: <input id="profile" type="file" name="file"></label>
-            <label for="age">Input your age (years): <input id="age" type="number" min="13"  max="120" name="age"></nput></label>
-            <label for="referrer">How did you hear abou us? 
-              <select id="referrer" name="referrer">
-                <option value="">(select one)</option>
-                <option value="1">Facebook</option>
-                <option value="2">Instagram</option>
-                <option value="3">Tik Tok</option>
-              </select>
-        </label>
-            <label for="bio">Provide a bio: <textarea name="bio" id="bio" cols="30" rows="3" placeholder="I like coding on the beach..."></textarea> </label>
-        </fieldset>
+<html lang ="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=width-device, initial-scale=1.0">
+    <title>Personal Portofolio</title>
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="front">
+     <nav id="navbar">
+        <a href="#welcome-section" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Work</a>
+        <a href="#profile-link" class="nav-link">Contact</a>  
+      </nav> 
+    </div>
+    <section id="welcome-section">
+      <h1 class="we">Hey I am Chris</h1>
+      <h2>a web developer</h2>
+    </section>
+    <section id="projects">
+      <div class="proj">
+        <h1 class="pr">These are some of my projects</h1>
+      </div>
+      <a class="project-tile" href="https://www.freecodecamp.org/learn/2022/responsive-web-design/learn-accessibility-by-building-a-quiz/step-68" >Project</a>
+    </section>
+    <section id="final">
+      <h1 class="we">Let's work together...</h1>
+      <h2>How do you take your coffee?</h2>
+      <div class="pro">
+        <a id="profile-link" href="https://www.freecodecamp.org/xbadas" target="_blank">Profile</a>
+      </div>
+    </section>
 
-        <input type="submit"  value="Submit" >
-    </form>
-    </body>
+  </body>
 </html>
